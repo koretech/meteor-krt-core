@@ -9,6 +9,6 @@ Package.onUse(function(api){
 		'namespaces.js'
 	], ['client', 'server']);
 
-	api.export('KT', ['client', 'server']);
+	api.export('KRT', ['client', 'server']);
 
 });
