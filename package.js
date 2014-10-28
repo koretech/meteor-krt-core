@@ -7,6 +7,8 @@ Package.describe({
 
 Package.onUse(function(api){
 
+	api.versionsFrom('METEOR@0.9.4');
+
 	api.addFiles([
 		'namespaces.js'
 	], ['client', 'server']);
