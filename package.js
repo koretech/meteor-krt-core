@@ -1,3 +1,5 @@
+var client = 'client', server = 'server', both = ['client', 'server'];
+
 Package.describe({
 	name: 'krt:core',
 	summary: 'Koretech Core Package',
@@ -9,8 +11,15 @@ Package.onUse(function(api){
 
 	api.versionsFrom('METEOR@0.9.4');
 
+	api.use([
+		'underscore',
+		'mquandalle:bower@0.1.11'
+	], both);
+
 	api.addFiles([
-		'namespaces.js'
+		'smart.json',
+		'namespaces.js',
+		'lib/util.js'
 	], ['client', 'server']);
 
 	api.export('KRT', ['client', 'server']);
