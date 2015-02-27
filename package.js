@@ -4,7 +4,8 @@ Package.describe({
 	name: 'krt:core',
 	summary: 'Koretech Core Package',
 	version: '0.1.2',
-	git: 'https://github.com/koretech/meteor-krt-core.git'
+	git: 'https://github.com/koretech/meteor-krt-core.git',
+	documentation: null
 });
 
 Package.onUse(function(api){
@@ -13,7 +14,7 @@ Package.onUse(function(api){
 
 	api.use([
 		'underscore',
-		'mquandalle:bower@0.1.11'
+		'mquandalle:bower@1.3.12_2'
 	], both);
 
 	api.addFiles([
