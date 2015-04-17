@@ -1,0 +1,12 @@
+{
+  "name": "meteor-krt-core",
+  "version": "0.1.2",
+  "dependencies": {
+    "deep-diff": "0.3.0"
+  },
+  "overrides": {
+    "jquery": {
+      "main": []
+    }
+  }
+}

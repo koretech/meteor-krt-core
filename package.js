@@ -3,7 +3,7 @@ var client = 'client', server = 'server', both = ['client', 'server'];
 Package.describe({
 	name: 'krt:core',
 	summary: 'Koretech Core Package',
-	version: '0.1.2',
+	version: '0.1.3',
 	git: 'https://github.com/koretech/meteor-krt-core.git',
 	documentation: null
 });
@@ -14,11 +14,11 @@ Package.onUse(function(api){
 
 	api.use([
 		'underscore',
-		'mquandalle:bower@1.3.12_2'
+		'mquandalle:bower@1.3.12_3'
 	], both);
 
 	api.addFiles([
-		'smart.json',
+		'bower.json',
 		'namespaces.js',
 		'lib/util.js'
 	], both);
